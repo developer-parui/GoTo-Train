@@ -1,43 +1,5 @@
 $(document).ready(function(){
 
-$('#search_trains').click(function () {
-	let source_station = $('#source_station').val();
-	let destination_station = $('#destination_station').val();
-
-
-	$.ajax({
-		url:"https://indianrailapi.com/api/v2/TrainBetweenStation/apikey/a02e61eb431c978e5bac029200583aad/From/" + source_station +"/To/"+ destination_station ,
-
-		success:function(data) {
-			//console.log(data);
-			console.log(data.Trains);
-
-           let blob;
-                for(let i=0; i<data.Trains;i++){
-                    blob= blob + `<tr><td>${data.Trains[i].TrainNo}</td><td>${data.Trains[i].TrainName}</td><td>${data.Trains[i].TravelTime}</td><td>${data.Trains[i].TrainType}</td></tr>`;
-                }
-
-                $('#display_trains').html(`
-                <table class="table">
-                    <tr>
-                        <th>Train Number</th>
-                        <th>Train Name</th>
-                        <th>Duration</th>
-                        <th>Train Type</th>
-                    </tr>
-                    ${blob}
-                </table>
-                `);
-
-		} ,
-
-		error:function(error){
-			alert("some error");
-			console.log(error);
-		}
-	})
-});
-
 
 
 
