@@ -14,58 +14,118 @@
 
 <body style="background-color: #eee ; font-family: 'Yanone Kaffeesatz', sans-serif">
 
-	<!--<nav class="navbar bg-aqua">
-		<a href="#"class="navbar-brand text-white"><strong>MyTrain</strong></a>
-	</nav> -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #00b894;">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Search Train</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Train Route</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          News
+
+	<nav class="navbar bg-blue-gradient">
+		<a href="#"class="navbar-brand text-white border p-1"><b>GoTo My Train</b></a>
+	</nav> 
+
+
+ <nav class="navbar bg-light "style="height:50px;position: sticky;top: 0px;z-index: 1">
+  <ul>
+    <li><a href="#">PNR STATUS</a></li>
+    <li><a href="#">CREATE USERID</a></li>
+    <li><a href="#">TRAIN SCHEDULE</a></li>
+     <li><a href="#">STATION</a></li>
+      <li><a href="#">OFFERS</a></li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+          More Details
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-    </ul>
-
-     <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </ul>
+  
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"style="margin-top: -24px;">
+    <button class="btn btn-outline-primary btn-sm float-md-right" type="submit"style="margin-top: -26px;">Submit</button>
   </form>
-
-  </div>
-</nav>
-
+ </nav>
 
  
 
+
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <div class="card">
+         <img id="main-headline-img1"class="card-img-top" src="https://www.newsclick.in/sites/default/files/2019-06/railway1.jpg" alt="Card image cap">
+        <div class="card-body"style="background-color: #3c3b3f">
+          <h3 id="main-headline-title1" class="card-title text-white">INDIAN RAILWAYS</h3>
+          <h3 class="text-muted">Safety  ||  Security ||  Punctuality</h3>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  <div class="col-4">
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="card">
+           <img id="main-headline-img1"class="card-img-top" src="https://lh3.googleusercontent.com/proxy/RSNtey41meaTMpaqTmlWlx526xkQ8g5nE0GClFk8uttYTin29eRBpr6eV90XU3zIy-K8KZyDV19PPI15bqQmAggriDiX7jUXAxsYPjdeuwe3ATmGsFKBWd5zY2tq8-8" alt="Card image cap">
+          <div class="card-body"style="background-color: #3c3b3f">
+            <h4 id="main-headline-title2"class="card-title text-muted">GoTo My Train</h4>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+
+       <div class="col-12">
+        <div class="card">
+           <img id="main-headline-img1"class="card-img-top" src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/05/11/860227-indianrailways-zee.jpg" alt="Card image cap">
+          <div class="card-body"style="background-color: #3c3b3f">
+            <h4 id="main-headline-title2"class="card-title text-muted">GoTo My Train</h4>
+
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+  
+<div class="row mt-5">
+  <div class="col-12">
+    <h1 class="text-white" style="border-bottom: 2px #fff solid">Features</h1>
+  </div>
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<div class="container">
 		<div class="row mt-4">
-			<div class="col-md-4 offset-0 mb-1">
+			<div class="col-md-4 offset-0 mb-3">
 				<div class="card">
 					<div class="card-body">
-						<img src="images/train.png"class="img-icon"></img>
+						<img src="images/train.png"class="img-icon"style="height: 130px"></img>
 						<h3 class="text-md-center mt-2 text-muted">Search For Train</h3>
 						<a href="#"class="btn btn-danger btn-block "data-toggle="modal" data-target="#exampleModal"><strong>Search Train</strong></a>
 					</div>
@@ -73,7 +133,7 @@
 			</div>
 			
 
-			<div class="col-md-4 ">
+			<div class="col-md-4 offset-0 mb-3">
 				<div class="card">
 					<div class="card-body">
 						<img src="images/map.png"class="img-icon"></img>
@@ -95,19 +155,197 @@
 			</div>
 			
 
-			<div class="col-md-4 ">
+			<div class="col-md-4 offset-0 mb-3">
 				<div class="card">
 					<div class="card-body">
-						<img src="images/track.png"class="img-icon"></img>
+						<img src="images/track.png"class="img-icon"style="height: 130px"></img>
 						<h3 class="text-md-center mt-2 text-muted">Check train status</h3>
 						<a href=""class="btn btn-danger btn-block">Track</a>
 					</div>
 				</div>
 			</div>
+
+
+        <div class="col-md-4 offset-0 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="images/pnr.png"class="img-icon"></img>
+            <h3 class="text-md-center mt-2 text-muted">Check your PNR status</h3>
+            <a href=""class="btn btn-danger btn-block">PNR Status</a>
+          </div>
+        </div>
+      </div>
+      
+
+        <div class="col-md-4 offset-0 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="images/pnr.png"class="img-icon"></img>
+            <h3 class="text-md-center mt-2 text-muted">Check your PNR status</h3>
+            <a href=""class="btn btn-danger btn-block">PNR Status</a>
+          </div>
+        </div>
+      </div>
+      
+
+
 		</div>
 		
 	</div>
 	
+
+
+<!-- Third -->
+
+
+<div class="container">
+  <div class="row mt-5">
+  <div class="col-12"style="border-bottom: 2px #fff solid">
+    <h1 class="text-white" style="display: inline;">NEWS</h1>
+    <button class="float-md-right btn btn-primary">View More</button>
+  </div>
+  
+<div class="col-12 mt-4">
+  <div class="row">
+    <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/05/11/860227-indianrailways-zee.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Indian Railways extends bidding process in Private Player Train project for 1 month</h5>
+    <p class="card-text">Details click Here...</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+
+     <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/05/11/860227-indianrailways-zee.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Indian Railways extends bidding process in Private Player Train project for 1 month</h5>
+    <p class="card-text">Details click Here...</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+     <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/05/11/860227-indianrailways-zee.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Indian Railways extends bidding process in Private Player Train project for 1 month</h5>
+    <p class="card-text">Details click Here...</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+     <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/05/11/860227-indianrailways-zee.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Indian Railways extends bidding process in Private Player Train project for 1 month</h5>
+    <p class="card-text">Details click Here...</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+</div>
+
+
+
+<!--Fourth-->
+
+ <div class="row mt-5">
+  <div class="col-12"style="border-bottom: 2px #fff solid">
+    <h1 class="text-white" style="display: inline;">OFFERS</h1>
+    <button class="float-md-right btn btn-primary">View More</button>
+  </div>
+  
+<div class="col-12 mt-4">
+  <div class="row">
+    <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://hotdealszone.com/wp-content/uploads/2020/01/Train-Ticket-Offers-1024x576.png" alt="Card image cap"style="height: 150px">
+        <div class="card-body">
+          <h5 class="card-title">IRCTC Cashback - Get 100% Cashback on Service Charges</h5>
+    <p class="card-text">Best train ticket booking offers for September 2020 </p>
+    <a href="https://hotdealszone.com/train-ticket-booking-offers-coupons/" class="btn btn-primary">Click Here</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+
+     <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://hotdealszone.com/wp-content/uploads/2020/01/Train-Ticket-Offers-1024x576.png" alt="Card image cap"style="height: 150px">
+        <div class="card-body">
+          <h5 class="card-title">IRCTC Cashback - Get 100% Cashback on Service Charges</h5>
+    <p class="card-text">ICICI Bank brings an amazing discount for all travellers..</p>
+    <a href="https://www.icicibank.com/offers/irctc-100-cashback.page" class="btn btn-primary">Click Here</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+     <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://hotdealszone.com/wp-content/uploads/2020/01/Train-Ticket-Offers-1024x576.png" alt="Card image cap"style="height: 150px">
+        <div class="card-body">
+          <h5 class="card-title">Goibibo Train Offer - Get up to 300 off on Train Tickets</h5>
+    <p class="card-text">Best train ticket booking offers for September 2020 ..</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+     <div class="col-3">
+      <div class="card">
+        <img class="card-img-top" src="https://hotdealszone.com/wp-content/uploads/2020/01/Train-Ticket-Offers-1024x576.png" alt="Card image cap"style="height: 150px">
+        <div class="card-body">
+          <h5 class="card-title">IRCTC Offer – Get Rs 100 Cashback on Booking Train Tickets via mVisa</h5>
+    <p class="card-text">Best train ticket booking offers for September 2020 . .</p>
+    <a href="https://www.flashsaletricks.com/irctc-offer-get-rs-100-cashback-booking-train-tickets-via-mvisa/" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <hr>
 <h3><center>Most visited Places</center></h3>
@@ -249,3 +487,4 @@
 <script type="text/javascript" src="js/app.js"></script>
 
 </body>
+</html>
